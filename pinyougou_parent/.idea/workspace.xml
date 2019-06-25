@@ -1,11 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="767b3578-28fd-469c-9bdb-55efa7b9e36e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/pinyougou_seckill_web/target/" />
     <ignored path="$PROJECT_DIR$/pinyougou_order_interface/target/" />
     <ignored path="$PROJECT_DIR$/pinyougou_user_service/target/" />
     <ignored path="$PROJECT_DIR$/pinyougou_content_service/target/" />
+=======
+<<<<<<< HEAD
+    <list default="true" id="c9286ebf-6f75-47cd-a628-41c013f4ff9c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/xiaobo_test/src/main/java/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiaobo_test/src/main/java/test.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/pinyougou_common/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_pojo/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_dao/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_order_service/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_cart_service/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_page_interface/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_seckill_service/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_task/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_user_web/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_sellergoods_interface/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_sms_service/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_es_utils/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_search_web/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_pay_interface/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_user_service/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_manager_web/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_content_interface/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_seckill_interface/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_search_interface/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_seckill_web/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_cart_web/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_portal_web/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_pay_service/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_user_interface/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_show_web/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_search_service/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_order_interface/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_cart_interface/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_page_service/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_sellergoods_service/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_page_web/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou_content_service/target/" />
+=======
+    <list default="true" id="1344ac47-443e-43b5-bcb7-b6d7f2d6facd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../hehehe.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hhh.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaobo_test/src/main/java/test.java" beforeDir="false" />
+    </list>
+>>>>>>> 2a7d00a2ddcf389f2873ce83b465075fe1f1b4b6
     <ignored path="$PROJECT_DIR$/pinyougou_content_interface/target/" />
     <ignored path="$PROJECT_DIR$/pinyougou_pojo/target/" />
     <ignored path="$PROJECT_DIR$/pinyougou_page_web/target/" />
@@ -35,12 +81,78 @@
     <ignored path="$PROJECT_DIR$/pinyougou_task/target/" />
     <ignored path="$PROJECT_DIR$/pinyougou_sellergoods_service/target/" />
     <ignored path="$PROJECT_DIR$/pinyougou_sms_service/target/" />
+<<<<<<< HEAD
+=======
+>>>>>>> eee45dd6b118f543fb07ff1613460b039547ed8d
+    <ignored path="$PROJECT_DIR$/xiaobo_test/target/" />
+>>>>>>> 2a7d00a2ddcf389f2873ce83b465075fe1f1b4b6
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2105431667">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="1" />
+          <entry key="xml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+          <entry key="XML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="4" />
+          <entry key="txt" value="41" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="4" />
+          <entry key="PLAIN_TEXT" value="41" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/xiaobo_test/src/main/java/test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+=======
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+>>>>>>> 2a7d00a2ddcf389f2873ce83b465075fe1f1b4b6
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_DATA_SOURCES" value="true" />
@@ -56,6 +168,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pinyougou_sellergoods_service/src/main/java/com/pinyougou/sellergoods/service/impl/ItemCatServiceImpl.java">
@@ -119,15 +232,62 @@
         </entry>
       </file>
     </leaf>
+=======
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+>>>>>>> eee45dd6b118f543fb07ff1613460b039547ed8d
+>>>>>>> 2a7d00a2ddcf389f2873ce83b465075fe1f1b4b6
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+<<<<<<< HEAD
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="E:/develop/apache-maven-3.3.9" />
         <option name="userSettingsFile" value="E:\develop\apache-maven-3.3.9\conf\settings.xml" />
+=======
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/pinyougou_sms_service/pom.xml" />
+        <option value="$PROJECT_DIR$/pinyougou_cart_interface/pom.xml" />
+        <option value="$PROJECT_DIR$/xiaobo_test/pom.xml" />
+>>>>>>> eee45dd6b118f543fb07ff1613460b039547ed8d
+        <option value="$PROJECT_DIR$/xiaobo_test/src/main/java/test.java" />
+      </list>
+    </option>
+  </component>
+<<<<<<< HEAD
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/maven/apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.5.4\conf\settings_pyg.xml" />
+=======
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\maven\repo" />
+        <option name="mavenHome" value="D:/maven/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.3.9\conf\settings.xml" />
+>>>>>>> eee45dd6b118f543fb07ff1613460b039547ed8d
+>>>>>>> 2a7d00a2ddcf389f2873ce83b465075fe1f1b4b6
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -141,17 +301,41 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+<<<<<<< HEAD
           <item name="pinyougou_parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="pinyougou_parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+=======
+<<<<<<< HEAD
+          <item name="xiaobo_test" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="xiaobo_test" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+=======
+          <item name="pinyougou_sms_service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="pinyougou_sms_service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+>>>>>>> eee45dd6b118f543fb07ff1613460b039547ed8d
+>>>>>>> 2a7d00a2ddcf389f2873ce83b465075fe1f1b4b6
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
+<<<<<<< HEAD
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="42" />
+    <option name="y" value="21" />
+    <option name="width" value="1239" />
+    <option name="height" value="777" />
+  </component>
+=======
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
@@ -162,6 +346,7 @@
     <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+>>>>>>> eee45dd6b118f543fb07ff1613460b039547ed8d
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -174,6 +359,7 @@
               <item name="pinyougou_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="pinyougou_parent" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
             <path>
               <item name="pinyougou_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="pinyougou_parent" type="462c0819:PsiDirectoryNode" />
@@ -341,6 +527,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+=======
+<<<<<<< HEAD
+            <path>
+              <item name="pinyougou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaobo_test" type="462c0819:PsiDirectoryNode" />
+            </path>
+=======
+>>>>>>> eee45dd6b118f543fb07ff1613460b039547ed8d
+>>>>>>> 2a7d00a2ddcf389f2873ce83b465075fe1f1b4b6
           </expand>
           <select />
         </subPane>
@@ -350,6 +546,27 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561448194470" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/xiaobo_test" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+=======
+    <property name="ChangesTree.GroupingKeys" value="module&#10;directory" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+>>>>>>> 2a7d00a2ddcf389f2873ce83b465075fe1f1b4b6
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561468636005" />
@@ -361,6 +578,7 @@
     <property name="project.structure.side.proportion" value="0.38105047" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
+>>>>>>> eee45dd6b118f543fb07ff1613460b039547ed8d
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -373,13 +591,96 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
+=======
+  <component name="RunManager">
+<<<<<<< HEAD
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="xiaobo_test" />
+=======
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="pinyougou_sms_service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itcast.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itcast.Application" />
+>>>>>>> eee45dd6b118f543fb07ff1613460b039547ed8d
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+<<<<<<< HEAD
+        <item itemvalue="Application.test" />
+=======
+        <item itemvalue="Spring Boot.Application" />
+>>>>>>> eee45dd6b118f543fb07ff1613460b039547ed8d
+      </list>
+    </recent_temporary>
+  </component>
+>>>>>>> 2a7d00a2ddcf389f2873ce83b465075fe1f1b4b6
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="767b3578-28fd-469c-9bdb-55efa7b9e36e" name="Default Changelist" comment="" />
       <created>1561450469148</created>
+=======
+<<<<<<< HEAD
+      <changelist id="c9286ebf-6f75-47cd-a628-41c013f4ff9c" name="Default Changelist" comment="" />
+      <created>1561444988300</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561444988300</updated>
+      <workItem from="1561444989876" duration="2815000" />
+    </task>
+    <task id="LOCAL-00001" summary="xiaobo_test java 新增System.out.println(&quot;test6&quot;);">
+      <created>1561445342099</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561445342099</updated>
+    </task>
+    <task id="LOCAL-00002" summary="新增System.out.println(&quot;test7&quot;);">
+      <created>1561447248250</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1561447248250</updated>
+    </task>
+    <task id="LOCAL-00003" summary="修改">
+      <created>1561447929863</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1561447929863</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2815000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+=======
+      <changelist id="1344ac47-443e-43b5-bcb7-b6d7f2d6facd" name="Default Changelist" comment="" />
+      <created>1561432707623</created>
+>>>>>>> 2a7d00a2ddcf389f2873ce83b465075fe1f1b4b6
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561450469148</updated>
@@ -394,6 +695,7 @@
     <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
@@ -402,14 +704,45 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info id="Image Layers" order="7" />
+=======
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+>>>>>>> eee45dd6b118f543fb07ff1613460b039547ed8d
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" />
+<<<<<<< HEAD
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23114754" />
+=======
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+>>>>>>> 2a7d00a2ddcf389f2873ce83b465075fe1f1b4b6
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" weight="0.3276923" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" weight="0.79046" />
+>>>>>>> eee45dd6b118f543fb07ff1613460b039547ed8d
+>>>>>>> 2a7d00a2ddcf389f2873ce83b465075fe1f1b4b6
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
@@ -418,6 +751,24 @@
       <window_info active="true" anchor="bottom" id="Version Control" order="12" visible="true" weight="0.3276923" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="14" />
+=======
+<<<<<<< HEAD
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="JSON Viewer" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Maven Projects" weight="0.32980332" />
+      <window_info anchor="right" id="Database" />
+=======
+      <window_info anchor="right" id="Maven" weight="0.32980332" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="JSON Viewer" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Database" weight="0.32980332" />
+>>>>>>> eee45dd6b118f543fb07ff1613460b039547ed8d
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Bean Validation" />
+>>>>>>> 2a7d00a2ddcf389f2873ce83b465075fe1f1b4b6
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -434,6 +785,61 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="xiaobo_test java 新增System.out.println(&quot;test6&quot;);" />
+    <MESSAGE value="新增System.out.println(&quot;test7&quot;);" />
+    <MESSAGE value="修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/xiaobo_test/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+=======
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+>>>>>>> 2a7d00a2ddcf389f2873ce83b465075fe1f1b4b6
   <component name="VcsManagerConfiguration">
     <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
@@ -452,6 +858,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pinyougou_seckill_service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="160">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
@@ -461,6 +868,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="87" column="27" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
+=======
+        <state relative-caret-position="144">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+          </folding>
+>>>>>>> eee45dd6b118f543fb07ff1613460b039547ed8d
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+<<<<<<< HEAD
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaobo_test/src/main/java/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+=======
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaobo_test/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaobo_test/src/main/java/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="33" />
+>>>>>>> eee45dd6b118f543fb07ff1613460b039547ed8d
+>>>>>>> 2a7d00a2ddcf389f2873ce83b465075fe1f1b4b6
         </state>
       </provider>
     </entry>
@@ -483,7 +922,15 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
+<<<<<<< HEAD
           <last-edited>Spring</last-edited>
+=======
+<<<<<<< HEAD
+          <last-edited>Spring</last-edited>
+=======
+          <last-edited>Web</last-edited>
+>>>>>>> eee45dd6b118f543fb07ff1613460b039547ed8d
+>>>>>>> 2a7d00a2ddcf389f2873ce83b465075fe1f1b4b6
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -518,7 +965,14 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
+<<<<<<< HEAD
           <last-edited>pinyougou_sms_service</last-edited>
+=======
+<<<<<<< HEAD
+          <last-edited>xiaobo_test</last-edited>
+=======
+          <last-edited>pinyougou_parent</last-edited>
+>>>>>>> 2a7d00a2ddcf389f2873ce83b465075fe1f1b4b6
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -532,6 +986,7 @@
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+>>>>>>> eee45dd6b118f543fb07ff1613460b039547ed8d
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -543,7 +998,15 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+<<<<<<< HEAD
           <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+=======
+<<<<<<< HEAD
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+=======
+          <last-edited>Maven: com.alibaba:druid:1.0.9</last-edited>
+>>>>>>> eee45dd6b118f543fb07ff1613460b039547ed8d
+>>>>>>> 2a7d00a2ddcf389f2873ce83b465075fe1f1b4b6
           <splitter-proportions>
             <option name="proportions">
               <list>
