@@ -38,6 +38,7 @@
         <module name="pinyougou_user_interface" />
         <module name="pinyougou_user_service" />
         <module name="pinyougou_user_web" />
+        <module name="xiaobo_test" />
       </profile>
     </annotationProcessing>
   </component>
