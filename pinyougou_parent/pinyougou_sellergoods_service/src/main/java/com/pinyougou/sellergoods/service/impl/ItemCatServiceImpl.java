@@ -2,6 +2,8 @@ package com.pinyougou.sellergoods.service.impl;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import com.pinyougou.pojo.TbSpecification;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.github.abel533.entity.Example;
@@ -158,5 +160,26 @@ public class ItemCatServiceImpl implements ItemCatService {
 		return itemCats;
 	}
 
+	/**
+	 * 查询当前登录商家的规格列表
+	 * @return
+	 */
+	@Override
+	public List<TbItemCat> getBySellerId(String sellerId) {
+		TbItemCat where = new TbItemCat();
+		where.setSellerId(sellerId);
+		return itemCatMapper.select(where);
+	}
+
+	@Override
+	public void updateStatus(String status, Long id) {
+
+		TbItemCat itemCat = new TbItemCat();
+		itemCat.setStatus(status);
+
+		itemCat.setId(id);
+		itemCatMapper.updateByPrimaryKeySelective(itemCat);
+
+	}
 
 }

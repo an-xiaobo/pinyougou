@@ -1,11 +1,12 @@
 package com.pinyougou.sellergoods.service.impl;
 import java.util.Arrays;
 import java.util.List;
+
+import com.pinyougou.pojo.TbGoods;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.github.abel533.entity.Example;
 import com.github.pagehelper.PageInfo;
-import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.pinyougou.mapper.TbBrandMapper;
 import com.pinyougou.pojo.TbBrand;
@@ -73,6 +74,7 @@ public class BrandServiceImpl implements BrandService {
 	 */
 	@Override
 	public void add(TbBrand brand) {
+
 		brandMapper.insertSelective(brand);		
 	}
 
@@ -110,6 +112,28 @@ public class BrandServiceImpl implements BrandService {
         //跟据查询条件删除数据
         brandMapper.deleteByExample(example);
 	}
-	
-	
+
+	/**
+	 * 查询当前登录商家的品牌列表
+	 * @return
+	 */
+	@Override
+	public List<TbBrand> getBySellerId(String sellerId) {
+		TbBrand where = new TbBrand();
+		where.setSellerId(sellerId);
+		return brandMapper.select(where);
+	}
+
+	@Override
+	public void updateStatus(String status, Long id) {
+
+		TbBrand brand = new TbBrand();
+		brand.setStatus(status);
+
+		brand.setId(id);
+		brandMapper.updateByPrimaryKeySelective(brand);
+
+	}
+
+
 }
