@@ -98,5 +98,29 @@ public class UserController {
 			return new ResultInfo(false, "删除失败");
 		}
 	}
+<<<<<<< HEAD
 	
+=======
+
+	@RequestMapping("/updateStatus")
+	public ResultInfo updateStatus(Integer id,String status) {
+		try {
+			userService.updateStatus(id, status);
+			return new ResultInfo(true, "修改成功");
+		} catch (Exception e) {
+			e.printStackTrace();
+			return new ResultInfo(false, "修改失败");
+		}
+	}
+
+	@RequestMapping("/countUserSum")
+	public Integer countUserSum() {
+		return userService.countUserSum();
+	}
+
+	@RequestMapping("/countActiveUser")
+	public Integer countActiveUser() {
+		return userService.countActiveUser();
+	}
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 }

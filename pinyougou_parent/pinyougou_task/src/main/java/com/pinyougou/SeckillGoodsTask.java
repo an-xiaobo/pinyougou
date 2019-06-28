@@ -38,8 +38,12 @@ public class SeckillGoodsTask {
         criteria.andEqualTo("status", "1");//审核状态
         criteria.andGreaterThan("stockCount", 0);//剩余库存数大于0
         //系统当前的时间
+<<<<<<< HEAD
         //Date nowTime = new Date();
         String nowTime = String.valueOf(System.currentTimeMillis());
+=======
+        Date nowTime = new Date();
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
         //开始时间小于等于当前时间
         criteria.andLessThanOrEqualTo("startTime", nowTime);
         //结束时间大于等于当前时间

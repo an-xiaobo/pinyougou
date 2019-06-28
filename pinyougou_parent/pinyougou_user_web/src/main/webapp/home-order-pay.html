@@ -10,6 +10,13 @@
 
     <link rel="stylesheet" type="text/css" href="css/webbase.css" />
     <link rel="stylesheet" type="text/css" href="css/pages-seckillOrder.css" />
+<<<<<<< HEAD
+=======
+	<!--引入VUE脚本-->
+	<script src="plugins/Vue/axios-0.18.0.js"></script>
+	<script src="plugins/Vue/vuejs-2.5.16.js"></script>
+	<script src="controller/IndexController.js"></script>
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 </head>
 
 <body>
@@ -144,6 +151,10 @@ $(function(){
 <script type="text/javascript" src="js/widget/nav.js"></script>
 </body>
     <!--header-->
+<<<<<<< HEAD
+=======
+<div id="app">
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
     <div id="account">
         <div class="py-container">
             <div class="yui3-g home">
@@ -153,8 +164,13 @@ $(function(){
                     <div class="person-info">
                         <div class="person-photo"><img src="img/_/photo.png" alt=""></div>
                         <div class="person-account">
+<<<<<<< HEAD
                             <span class="name">Michelle</span>
                             <span class="safe">账户安全</span>
+=======
+							<span class="name">{{loginName}}</span>
+							<span class="safe"><a href="/logout/cas">退出登录 </a></span>
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
                         </div>
                         <div class="clearfix"></div>
                     </div>
@@ -209,33 +225,57 @@ $(function(){
                                         <input type="checkbox" checked="checked"><span>全选</span>
                                     </label>
                                     <a href="" class="sui-btn btn-info btn-bordered hepay-btn">合并付款</a>
+<<<<<<< HEAD
                                     <div class="sui-pagination pagination-large top-pages">
+=======
+                                   <!-- <div class="sui-pagination pagination-large top-pages">
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
                                         <ul>
                                             <li class="prev disabled"><a href="#">上一页</a></li>
 
                                             <li class="next"><a href="#">下一页</a></li>
                                         </ul>
+<<<<<<< HEAD
                                     </div>
                                 </div>
 
                                 <div class="choose-title">
                                     <label data-toggle="checkbox" class="checkbox-pretty ">
                                            <input type="checkbox" checked="checked"><span>2017-02-11 11:59　订单编号：7867473872181848  店铺：哇哈哈 <a>和我联系</a></span>
+=======
+                                    </div>-->
+                                </div>
+
+							<div v-for="userOrder in userOrderList">
+								<div v-if="userOrder.order.status==1">
+                                <div class="choose-title">
+                                    <label data-toggle="checkbox" class="checkbox-pretty ">
+                                           <input type="checkbox" checked="checked"><span>{{userOrder.order.createTime}}　订单编号：{{userOrder.order.orderId}}  店铺：{{userOrder.order.sellerId}} <a>和我联系</a></span>
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
                                      </label>
                                     <a class="sui-btn btn-info share-btn">分享</a>
                                 </div>
                                 <table class="sui-table table-bordered order-datatable">
 
                                     <tbody>
+<<<<<<< HEAD
                                         <tr>
                                             <td width="35%">
                                                 <div class="typographic"><img src="img/goods.png" />
                                                     <a href="#" class="block-text">包邮 正品玛姬儿压缩面膜无纺布纸膜100粒 送泡瓶面膜刷喷瓶 新款</a>
                                                     <span class="guige">规格：温泉喷雾150ml</span>
+=======
+                                        <tr v-for="orderItem in userOrder.orderItems">
+                                            <td width="35%">
+                                                <div class="typographic"><img style="width: 40%" height="40%" :src="orderItem.picPath" />
+                                                    <a href="#" class="block-text">{{orderItem.title}}</a>
+                                                    <!--<span class="guige">规格：温泉喷雾150ml</span>-->
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
                                                 </div>
                                             </td>
                                             <td width="5%" class="center">
                                                 <ul class="unstyled">
+<<<<<<< HEAD
                                                     <li class="o-price">¥599.00</li>
                                                     <li>¥299.00</li>
                                                 </ul>
@@ -245,6 +285,22 @@ $(function(){
                                             <td width="10%" class="center">
                                                 <ul class="unstyled">
                                                     <li>¥299.00</li>
+=======
+                                                    <!--<li class="o-price">¥599.00</li>-->
+                                                    <li>¥{{orderItem.price}}</li>
+                                                </ul>
+                                            </td>
+                                            <td width="5%" class="center">{{orderItem.num}}</td>
+                                            <td width="8%" class="center">
+												<ul class="unstyled" v-if="userOrder.order.status==1">
+													<li>未付款</li>
+													<!--<li><a>退货/退款</a></li>-->
+												</ul>
+											</td>
+                                            <td width="10%" class="center">
+                                                <ul class="unstyled">
+                                                    <li>¥{{orderItem.totalFee}}</li>
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
                                                     <li>（含运费：￥0.00）</li>
                                                 </ul>
                                             </td>
@@ -258,7 +314,11 @@ $(function(){
                                             </td>
                                             <td width="10%" class="center">
                                                 <ul class="unstyled">
+<<<<<<< HEAD
                                                     <li><a href="#" class="sui-btn btn-info">立即付款</a></li>
+=======
+                                                    <li><a @click="createNavite(userOrder.order.orderId,orderItem.totalFee)" class="sui-btn btn-info">立即付款</a></li>
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
                                                     <li><a href="#">取消订单</a></li>
                                                 </ul>
                                             </td>
@@ -266,7 +326,11 @@ $(function(){
                                         </tr>
                                     </tbody>
                                 </table>
+<<<<<<< HEAD
 
+=======
+								</div>
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
                             </div>
 
                             <div class="choose-order">
@@ -384,6 +448,10 @@ $(function(){
             </div>
         </div>
     </div>
+<<<<<<< HEAD
+=======
+</div>
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
     <!-- 底部栏位 -->
     <!--页面底部-->
 <div class="clearfix footer">

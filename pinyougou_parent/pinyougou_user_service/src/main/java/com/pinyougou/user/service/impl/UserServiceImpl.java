@@ -2,8 +2,16 @@ package com.pinyougou.user.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.alibaba.fastjson.JSON;
+<<<<<<< HEAD
 import com.pinyougou.mapper.TbUserMapper;
 import com.pinyougou.pojo.TbUser;
+=======
+import com.github.abel533.entity.Example;
+import com.pinyougou.mapper.*;
+import com.pinyougou.pojo.*;
+import com.pinyougou.pojogroup.UserOrder;
+import com.pinyougou.user.service.AddressService;
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 import com.pinyougou.user.service.UserService;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
@@ -13,9 +21,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.BoundValueOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 
+<<<<<<< HEAD
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+=======
+import java.util.*;
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 import java.util.concurrent.TimeUnit;
 
 @Service
@@ -30,6 +42,23 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private DefaultMQProducer producer;
 
+<<<<<<< HEAD
+=======
+    @Autowired
+    private TbOrderMapper orderMapper;
+
+    @Autowired
+    private TbOrderItemMapper orderItemMapper;
+
+    @Autowired
+    private TbAddressMapper addressMapper;
+
+    @Autowired
+    TbGoodCollectMapper goodCollectMapper;
+
+    @Autowired TbItemMapper itemMapper;
+
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
     @Override
     public void add(TbUser user) {
         user.setCreated(new Date());//创建日期
@@ -82,4 +111,108 @@ public class UserServiceImpl implements UserService {
         //对比用户输入的验证码是否一样
         return code.equals(smsCode);
     }
+<<<<<<< HEAD
+=======
+
+    /**
+     * 根据登录用户id查询订单和对应商品
+     * @param userId
+     * @return
+     */
+    @Override
+    public List<UserOrder> findOrderByUserId(String userId) {
+
+        List<UserOrder> list = new ArrayList();
+
+        //查询订单
+        TbOrder tbOrder = new TbOrder();
+        tbOrder.setUserId(userId);
+        List<TbOrder> tbOrders = orderMapper.select(tbOrder);
+
+        //查询每个订单对应商品
+        for (TbOrder order : tbOrders) {
+            TbOrderItem tbOrderItem = new TbOrderItem();
+            tbOrderItem.setOrderId(order.getOrderId());
+            List<TbOrderItem> items = orderItemMapper.select(tbOrderItem);
+
+            //创建每个订单对象,包含每个订单对应的商品
+            UserOrder userOrder = new UserOrder();
+            //封装对象
+            userOrder.setOrder(order);
+            userOrder.setOrderItems(items);
+
+            list.add(userOrder);
+        }
+
+        //返回
+        return list;
+    }
+
+    /**
+     * 根据登录用户id查询信息
+     * @param userId
+     * @return
+     */
+    @Override
+    public Map<String, Object> getUserInfoByUserId(String userId) {
+        //查询用户信息
+        TbUser tbUser = new TbUser();
+        tbUser.setUsername(userId);
+        TbUser user = userMapper.selectOne(tbUser);
+
+        //查询默认地址
+        TbAddress tbAddress = new TbAddress();
+        tbAddress.setUserId(userId);
+        tbAddress.setIsDefault("1");
+        TbAddress address = addressMapper.selectOne(tbAddress);
+
+        //查询所有收货地址
+        TbAddress tbAddress2 = new TbAddress();
+        tbAddress2.setUserId(userId);
+        List<TbAddress> address2 = addressMapper.select(tbAddress2);
+
+        //封装对象
+        HashMap<String,Object> map = new HashMap();
+        map.put("user",user);
+        map.put("address",address);
+        map.put("address2",address2);
+
+        return map;
+    }
+
+    /**
+     * 修改用户
+     * @param userInfo
+     */
+    @Override
+    public void changeUserInfo(TbUser userInfo) {
+        userMapper.updateByPrimaryKeySelective(userInfo);
+    }
+
+    /**
+     * 根据登录用户查询收藏商品
+     * @param username
+     * @return
+     */
+    @Override
+    public List<TbItem> findGoodsCollect(String username) {
+        //查询该用户所收藏的商品列表
+        TbGoodCollect tbGoodCollect = new TbGoodCollect();
+        tbGoodCollect.setUsername(username);
+        List<TbGoodCollect> goodCollects = goodCollectMapper.select(tbGoodCollect);
+        List goodCollectsId = new ArrayList();
+        for (TbGoodCollect goodCollect : goodCollects) {
+            goodCollectsId.add(goodCollect.getGoodId());
+        }
+
+        //根据查出的商品ID列表查出商品列表
+        Example example = new Example(TbItem.class);
+        Example.Criteria criteria = example.createCriteria();
+        criteria.andIn("id",goodCollectsId);
+
+        List<TbItem> tbItems = itemMapper.selectByExample(example);
+
+        return tbItems;
+    }
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 }

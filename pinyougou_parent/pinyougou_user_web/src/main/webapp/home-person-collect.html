@@ -10,6 +10,13 @@
 
     <link rel="stylesheet" type="text/css" href="css/webbase.css" />
     <link rel="stylesheet" type="text/css" href="css/pages-seckillOrder.css" />
+<<<<<<< HEAD
+=======
+	<!--引入VUE脚本-->
+	<script src="plugins/Vue/axios-0.18.0.js"></script>
+	<script src="plugins/Vue/vuejs-2.5.16.js"></script>
+	<script src="controller/CollectController.js"></script>
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 </head>
 
 <body>
@@ -143,7 +150,13 @@ $(function(){
 <script type="text/javascript" src="js/plugins/jquery-placeholder/jquery.placeholder.min.js"></script>
 <script type="text/javascript" src="js/widget/nav.js"></script>
 </body>
+<<<<<<< HEAD
     <!--header-->
+=======
+
+    <!--header-->
+<div id="app">
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
     <div id="account">
         <div class="py-container">
             <div class="yui3-g collect">
@@ -153,8 +166,13 @@ $(function(){
                     <div class="person-info">
                         <div class="person-photo"><img src="img/_/photo.png" alt=""></div>
                         <div class="person-account">
+<<<<<<< HEAD
                             <span class="name">Michelle</span>
                             <span class="safe">账户安全</span>
+=======
+							<span class="name">{{loginName}}</span>
+							<span class="safe"><a href="/logout/cas">退出登录 </a></span>
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
                         </div>
                         <div class="clearfix"></div>
                     </div>
@@ -189,6 +207,7 @@ $(function(){
                             <h4>收藏的商品</h4>
                             <div class="goods-list">
                                 <ul class="yui3-g"  id="goods-list">
+<<<<<<< HEAD
                                     <li class="yui3-u-1-4">
                                         <div class="list-wrap">
                                             <div class="p-img"><img src="img/_/t.jpg" alt=''></div>
@@ -260,6 +279,14 @@ $(function(){
                                             <div class="price"><strong><em>¥</em> <i>139.00</i></strong></div>
                                             <div class="attr"><em>Apple苹果iPhone 6s 32G金色 移动联通电信4G手机</em></div>
                                             <div class="cu"><em><span>促</span>满一件可参加超值换购</em></div>
+=======
+                                    <li class="yui3-u-1-4" v-for="goodsItem in goodsItemList">
+                                        <div class="list-wrap">
+                                            <div class="p-img"><img :src="goodsItem.image" alt=''></div>
+                                            <div class="price"><strong><em>¥</em> <i>{{goodsItem.price}}</i></strong></div>
+                                            <div class="attr"><em>{{goodsItem.title}}</em></div>
+                                            <div class="cu"><em><span>促</span>{{goodsItem.sellPoint}}</em></div>
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
                                             <div class="operate">
                                                 <a href="success-cart.html" target="_blank" class="sui-btn btn-bordered btn-danger">加入购物车</a>
                                                 <a href="javascript:void(0);" class="sui-btn btn-bordered">对比</a>
@@ -267,6 +294,10 @@ $(function(){
                                             </div>
                                         </div>
                                     </li >
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
                                 </ul>
                             </div>
                       
@@ -363,6 +394,10 @@ $(function(){
             </div>
         </div>
     </div>
+<<<<<<< HEAD
+=======
+</div>
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
     <!-- 底部栏位 -->
     <!--页面底部-->
 <div class="clearfix footer">
@@ -495,6 +530,10 @@ $(function(){
 		</div>
 	</div>
 </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 <!--页面底部END-->
 undefined
 

@@ -3,6 +3,10 @@ import java.util.Arrays;
 import java.util.List;
 
 import com.pinyougou.mapper.TbSpecificationOptionMapper;
+<<<<<<< HEAD
+=======
+import com.pinyougou.pojo.TbBrand;
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 import com.pinyougou.pojo.TbSpecificationOption;
 import com.pinyougou.pojogroup.Specification;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -145,6 +149,7 @@ public class SpecificationServiceImpl implements SpecificationService {
 	 * @param specification
 	 */
     @Override
+<<<<<<< HEAD
     public void add(Specification specification) {
     	//保存规格
         specificationMapper.insertSelective(specification.getSpecification());
@@ -156,6 +161,34 @@ public class SpecificationServiceImpl implements SpecificationService {
 			specificationOptionMapper.insertSelective(option);
 		}
     }
+=======
+    public void add(TbSpecification specification) {
+    	//保存规格
+        specificationMapper.insertSelective(specification);
+
+    }
+	/**
+	 * 查询当前登录商家的规格列表
+	 * @return
+	 */
+	@Override
+	public List<TbSpecification> getBySellerId(String sellerId) {
+		TbSpecification where = new TbSpecification();
+		where.setSellerId(sellerId);
+		return specificationMapper.select(where);
+	}
+
+	@Override
+	public void updateStatus(String status, Long id) {
+
+		TbSpecification specification = new TbSpecification();
+		specification.setStatus(status);
+
+		specification.setId(id);
+		specificationMapper.updateByPrimaryKeySelective(specification);
+
+	}
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 
 
 }

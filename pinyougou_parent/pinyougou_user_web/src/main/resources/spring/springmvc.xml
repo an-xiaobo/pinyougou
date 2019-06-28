@@ -13,6 +13,12 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
+<<<<<<< HEAD
+=======
+    <!--加载配置文件-->
+    <context:property-placeholder location="classpath:dfs.properties"/>
+
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
     <!--开启mvc的注解驱动-->
     <mvc:annotation-driven>
         <mvc:message-converters register-defaults="true">
@@ -29,6 +35,17 @@
         </mvc:message-converters>
     </mvc:annotation-driven>
 
+<<<<<<< HEAD
+=======
+    <!-- 配置多媒体解析器 -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="defaultEncoding" value="UTF-8"></property>
+        <!-- 设定文件上传的最大值5MB，5*1024*1024 -->
+        <property name="maxUploadSize" value="5242880"></property>
+    </bean>
+
+
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
     <!--引入dubbo服务-->
     <dubbo:application name="pinyougou-user-web"/>
     <!--配置注册中心-->

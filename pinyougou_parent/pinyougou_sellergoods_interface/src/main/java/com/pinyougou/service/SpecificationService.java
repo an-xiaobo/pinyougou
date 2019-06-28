@@ -1,5 +1,10 @@
 package com.pinyougou.service;
 import java.util.List;
+<<<<<<< HEAD
+=======
+
+import com.pinyougou.pojo.TbBrand;
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 import com.pinyougou.pojo.TbSpecification;
 
 import com.pinyougou.entity.PageResult;
@@ -50,7 +55,26 @@ public interface SpecificationService {
 	 * 增加
 	 * @param specification
 	 */
+<<<<<<< HEAD
 	public void add(Specification specification);
 
+=======
+	public void add(TbSpecification specification);
+
+
+	/**
+	 * 查询当前登录商家的规格列表
+	 * @return
+	 */
+	public List<TbSpecification> getBySellerId(String sellerId);
+
+
+	/**
+	 * 更新状态
+	 * @param status
+	 * @param Id
+	 */
+	public void updateStatus(String status, Long Id);
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 
 }

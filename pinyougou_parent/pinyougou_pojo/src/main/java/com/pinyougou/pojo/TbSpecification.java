@@ -18,6 +18,37 @@ public class TbSpecification implements Serializable {
     @Column(name = "spec_name")
     private String specName;
 
+<<<<<<< HEAD
+=======
+
+    /**
+     * 商家Id
+     */
+    @Column(name = "seller_id")
+    private String sellerId;
+
+    /**
+     * 品牌状态
+     */
+    private String status;
+
+    public String getSellerId() {
+        return sellerId;
+    }
+
+    public void setSellerId(String sellerId) {
+        this.sellerId = sellerId;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
     private static final long serialVersionUID = 1L;
 
     /**
