@@ -52,7 +52,7 @@ public interface SpecificationService {
 	 * 增加
 	 * @param specification
 	 */
-	public void add(Specification specification);
+	public void add(TbSpecification specification);
 
 
 	/**
