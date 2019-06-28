@@ -18,6 +18,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
+ * 秒杀订单实现
  * 业务逻辑实现
  * @author Steven
  *
@@ -163,7 +164,7 @@ public class SeckillOrderServiceImpl implements SeckillOrderService {
 		//登记排队信息,(每个商品单独排一队),左进右取,以商品的id为key,用户id为value
 		redisTemplate.boundListOps("seckill_goods_order_queue_"+seckillId).leftPush(userId);
 		//记录用户已在排队的信息,redis中key=用户id {商品id:排队标识}
-		redisTemplate.boundHashOps("user_order_info_"+userId).put(seckillId, QueueTag.IN_LINE);
+		redisTemplate.boundHashOps("user_order_info_" + userId).put(seckillId, QueueTag.IN_LINE);
 
 		//开启多线程下单
 		multiThreadWork.createOrder(seckillId);

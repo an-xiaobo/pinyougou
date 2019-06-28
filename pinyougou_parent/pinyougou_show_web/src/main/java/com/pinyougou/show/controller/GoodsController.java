@@ -14,7 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 /**
- * 请求处理器
+ *
+ * 商品 请求处理器
  * @author Steven
  *
  */

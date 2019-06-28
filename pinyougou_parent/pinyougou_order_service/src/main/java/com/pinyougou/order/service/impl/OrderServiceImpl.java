@@ -12,6 +12,7 @@ import com.pinyougou.mapper.TbPayLogMapper;
 import com.pinyougou.order.service.OrderService;
 import com.pinyougou.pojo.TbOrderItem;
 import com.pinyougou.pojo.TbPayLog;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.github.abel533.entity.Example;
@@ -30,6 +31,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 @Service
 public class OrderServiceImpl implements OrderService {
 
+
 	@Autowired
 	private TbOrderMapper orderMapper;
 
@@ -44,6 +46,7 @@ public class OrderServiceImpl implements OrderService {
 
 	@Autowired
 	private TbPayLogMapper payLogMapper;
+
 	
 	/**
 	 * 查询全部

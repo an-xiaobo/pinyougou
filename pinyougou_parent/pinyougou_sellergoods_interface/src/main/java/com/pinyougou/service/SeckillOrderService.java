@@ -4,6 +4,7 @@ import com.pinyougou.pojo.TbSeckillOrder;
 
 import com.pinyougou.entity.PageResult;
 /**
+ * 秒杀订单
  * 业务逻辑接口
  * @author Steven
  *
