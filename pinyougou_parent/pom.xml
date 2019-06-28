@@ -40,11 +40,10 @@
         <module>pinyougou_seckill_service</module>
         <module>pinyougou_seckill_web</module>
         <module>pinyougou_task</module>
-<<<<<<< HEAD
+
         <module>pinyougou_sms_service</module>
 
-=======
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
+
     </modules>
 
     <!-- 集中定义依赖版本号 -->
