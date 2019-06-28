@@ -5,6 +5,7 @@ import java.util.Map;
 
 import com.alibaba.fastjson.JSON;
 import com.pinyougou.mapper.TbSpecificationOptionMapper;
+import com.pinyougou.pojo.TbSpecification;
 import com.pinyougou.pojo.TbSpecificationOption;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.alibaba.dubbo.config.annotation.Service;
@@ -175,6 +176,28 @@ public class TypeTemplateServiceImpl implements TypeTemplateService {
 			List<Map> specList = findSpecList(typeTemplate.getId());
 			redisTemplate.boundHashOps("specList").put(typeTemplate.getId(), specList);
 		}
+	}
+
+	/**
+	 * 查询当前登录商家的模板列表
+	 * @return
+	 */
+	@Override
+	public List<TbTypeTemplate> getBySellerId(String sellerId) {
+		TbTypeTemplate where = new TbTypeTemplate();
+		where.setSellerId(sellerId);
+		return typeTemplateMapper.select(where);
+	}
+
+	@Override
+	public void updateStatus(String status, Long id) {
+
+		TbTypeTemplate typeTemplate = new TbTypeTemplate();
+		typeTemplate.setStatus(status);
+
+		typeTemplate.setId(id);
+		typeTemplateMapper.updateByPrimaryKeySelective(typeTemplate);
+
 	}
 
 }

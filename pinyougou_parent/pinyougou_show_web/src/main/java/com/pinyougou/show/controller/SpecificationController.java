@@ -3,9 +3,10 @@ package com.pinyougou.show.controller;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.pinyougou.entity.PageResult;
 import com.pinyougou.entity.ResultInfo;
-import com.pinyougou.pojo.TbItemCat;
+import com.pinyougou.pojo.TbBrand;
 import com.pinyougou.pojo.TbSpecification;
-import com.pinyougou.service.ItemCatService;
+import com.pinyougou.pojogroup.Specification;
+import com.pinyougou.service.SpecificationService;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,19 +20,19 @@ import java.util.List;
  *
  */
 @RestController
-@RequestMapping("/itemCat")
-public class ItemCatController {
+@RequestMapping("/specification")
+public class SpecificationController {
 
 	@Reference
-	private ItemCatService itemCatService;
+	private SpecificationService specificationService;
 	
 	/**
 	 * 返回全部列表
 	 * @return
 	 */
 	@RequestMapping("/findAll")
-	public List<TbItemCat> findAll(){			
-		return itemCatService.findAll();
+	public List<TbSpecification> findAll(){			
+		return specificationService.findAll();
 	}
 	
 	
@@ -40,24 +41,25 @@ public class ItemCatController {
 	 * @return
 	 */
 	@RequestMapping("/findPage")
-	public PageResult  findPage(int pageNo,int pageSize,@RequestBody TbItemCat itemCat){			
-		return itemCatService.findPage(pageNo, pageSize,itemCat);
+	public PageResult  findPage(int pageNo,int pageSize,@RequestBody TbSpecification specification){			
+		return specificationService.findPage(pageNo, pageSize,specification);
 	}
 	
 	/**
 	 * 增加
-	 * @param itemCat
+	 * @param specification
 	 * @return
 	 */
 	@RequestMapping("/add")
-	public ResultInfo add(@RequestBody TbItemCat itemCat){
+	public ResultInfo add(@RequestBody TbSpecification specification){
 		try {
 			//从Security中获取用户名
 			String sellerId = SecurityContextHolder.getContext().getAuthentication().getName();
 			// 追加商家id
-			itemCat.setSellerId(sellerId);
-			itemCat.setStatus("0");
-			itemCatService.add(itemCat);
+			specification.setSellerId(sellerId);
+			specification.setStatus("0");
+
+			specificationService.add(specification);
 			return new ResultInfo(true, "增加成功");
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -67,13 +69,13 @@ public class ItemCatController {
 	
 	/**
 	 * 修改
-	 * @param itemCat
+	 * @param specification
 	 * @return
 	 */
 	@RequestMapping("/update")
-	public ResultInfo update(@RequestBody TbItemCat itemCat){
+	public ResultInfo update(@RequestBody Specification specification){
 		try {
-			itemCatService.update(itemCat);
+			specificationService.update(specification);
 			return new ResultInfo(true, "修改成功");
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -87,8 +89,8 @@ public class ItemCatController {
 	 * @return
 	 */
 	@RequestMapping("/getById")
-	public TbItemCat getById(Long id){
-		return itemCatService.getById(id);		
+	public Specification getById(Long id){
+		return specificationService.getById(id);
 	}
 	
 	/**
@@ -99,7 +101,7 @@ public class ItemCatController {
 	@RequestMapping("/delete")
 	public ResultInfo delete(Long [] ids){
 		try {
-			itemCatService.delete(ids);
+			specificationService.delete(ids);
 			return new ResultInfo(true, "删除成功"); 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -108,27 +110,17 @@ public class ItemCatController {
 	}
 
 	/**
-	 * 根据父ID查找商品分类列表
-	 * @param parentId
+	 * 查询当前登录商家的品牌列表
 	 * @return
 	 */
-	@RequestMapping("/findByParentId")
-	public List<TbItemCat> findByParentId(Long parentId){
-		return itemCatService.findByParentId(parentId);
-	}
-
-	/**
-	 * 查询当前登录商家的分类列表
-	 * @return
-	 */
-	@RequestMapping("/findItemCat")
-	public List<TbItemCat> findBrand(){
+	@RequestMapping("/findSpec")
+	public List<TbSpecification> findBrand(){
 
 		//从Security中获取用户名
 		String sellerId = SecurityContextHolder.getContext().getAuthentication().getName();
 
-		// 根据商家查询分类列表
-		return itemCatService.getBySellerId(sellerId);
+		// 根据商家查询品牌列表
+		return specificationService.getBySellerId(sellerId);
 
 	}
 
@@ -141,11 +133,12 @@ public class ItemCatController {
 	public ResultInfo updateStatus(String status,Long id){
 		try {
 			// 更新状态
-			itemCatService.updateStatus(status,id);
+			specificationService.updateStatus(status,id);
 			return new ResultInfo(true, "修改成功");
 		} catch (Exception e) {
 			e.printStackTrace();
 			return new ResultInfo(false, "修改失败");
 		}
 	}
+	
 }
