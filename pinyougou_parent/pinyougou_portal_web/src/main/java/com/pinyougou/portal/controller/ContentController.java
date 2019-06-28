@@ -108,5 +108,8 @@ public class ContentController {
 	public List<TbContent> findByCategoryId(Long categoryId){
 		return contentService.findByCategoryId(categoryId);
 	}
-	
+
+
+
+
 }
