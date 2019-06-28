@@ -1,5 +1,6 @@
 package com.pinyougou.sellergoods.service.impl;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.alibaba.dubbo.config.annotation.Service;
@@ -11,6 +12,8 @@ import com.pinyougou.mapper.TbUserMapper;
 import com.pinyougou.pojo.TbUser;
 import com.pinyougou.service.UserService;
 import com.pinyougou.entity.PageResult;
+
+import javax.xml.crypto.Data;
 
 /**
  * 业务逻辑实现
@@ -154,6 +157,34 @@ public class UserServiceImpl implements UserService {
         //跟据查询条件删除数据
         userMapper.deleteByExample(example);
 	}
-	
-	
+
+	/**
+	 * 根据id修改用户状态
+	 * @param id
+	 * @param status
+	 */
+	@Override
+	public void updateStatus(Integer id, String status) {
+		TbUser user = new TbUser();
+		user.setStatus(status);
+		Example example = new Example(TbUser.class);
+		Example.Criteria criteria = example.createCriteria();
+		criteria.andEqualTo("id", id);
+		userMapper.updateByExampleSelective(user, example);
+	}
+
+	@Override
+	public Integer countUserSum() {
+		return userMapper.selectCount(null);
+	}
+
+	@Override
+	public Integer countActiveUser() {
+		Date date = new Date();
+		Date time = new Date(date.getTime() - 24 * 3600 * 1000);
+		Example example = new Example(TbUser.class);
+		Example.Criteria criteria = example.createCriteria();
+		criteria.andGreaterThan("lastLoginTime", time);
+		return userMapper.selectCountByExample(example);
+	}
 }

@@ -50,5 +50,12 @@ public interface UserService {
 	 */
 	public void delete(Long [] ids);
 
-	
+
+    void updateStatus(Integer id, String status);
+
+	Integer countUserSum();
+
+	//查活跃用户，24小时之内登录过的
+	Integer countActiveUser();
+
 }

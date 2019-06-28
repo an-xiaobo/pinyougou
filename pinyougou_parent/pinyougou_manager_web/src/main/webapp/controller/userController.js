@@ -16,7 +16,11 @@ window.onload=function () {
 			//将要删除的id列表
 			ids:[],
 			//搜索包装对象
-			searchEntity:{}
+			searchEntity:{},
+			//会员等级
+			level:['普通用户','初级会员','中级会员','高级会员'],
+			//用户状态
+			status:['冻结','正常']
 		},
 		methods:{
 			//查询所有
@@ -33,7 +37,7 @@ window.onload=function () {
 				axios.post("../user/findPage.do?pageNo="+pageNo+"&pageSize="+10,this.searchEntity)
 					.then(function (response) {
 						app.pages = response.data.pages;  //总页数
-						app.list = response.data.rows;  //数据列表
+						app.list = response.data.list;  //数据列表
 						app.pageNo = pageNo;  //更新当前页
 					});
 			},
@@ -75,12 +79,24 @@ window.onload=function () {
 						alert(response.data.message);
 					}
 				})
+			},
+			//更新用户状态
+			updateStatus:function (id,status) {
+				axios.get("/user/updateStatus.do?id="+id+"&status="+status).then(function (response) {
+					if (response.data.success){
+						app.findPage(app.pageNo);
+					}else {
+						//失败时显示失败消息
+						alert(response.data.message);
+					}
+				})
 			}
 		},
 		//Vue对象初始化后，调用此逻辑
 		created:function () {
 			//调用用分页查询，初始化时从第1页开始查询
 			this.findPage(1);
+			// this.findAll();
 		}
 	});
-}
+};
