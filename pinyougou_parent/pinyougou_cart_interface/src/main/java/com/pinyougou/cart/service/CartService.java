@@ -38,4 +38,11 @@ public interface CartService {
      * @return
      */
     public List<Cart> addGoodsToCartList(List<Cart> cartList,Long itemId,Integer num);
+
+    /**
+     * 修改用户最后登录时间
+     * @param userName
+     * @return
+     */
+    void updateUserEndLoginTime(String userName);
 }

@@ -6,6 +6,8 @@ import com.pinyougou.cart.service.CartService;
 import com.pinyougou.common.utils.CookieUtil;
 import com.pinyougou.entity.Cart;
 import com.pinyougou.entity.ResultInfo;
+
+import com.pinyougou.user.service.UserService;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -31,6 +33,13 @@ public class CartController {
     @Autowired
     private HttpServletResponse response;
 
+
+    /*@RequestMapping("/findUserActiveNum")
+    public void updateUserEndLoginTime(){
+        //获取登入的用户名
+        String username = SecurityContextHolder.getContext().getAuthentication().getName();
+        cartService.updateUserEndLoginTime(username);
+    }*/
     /**
      * 查询购物车列表
      * @return
@@ -39,6 +48,7 @@ public class CartController {
     public List<Cart> findCartList() {
         //获取登入的用户名
         String username = SecurityContextHolder.getContext().getAuthentication().getName();
+        cartService.updateUserEndLoginTime(username);
 
         //定义集合存cookie和redis的购物车集合
         List<Cart> carts = new ArrayList<>();

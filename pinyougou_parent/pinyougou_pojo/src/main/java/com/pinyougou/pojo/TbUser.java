@@ -507,8 +507,9 @@ public class TbUser implements Serializable {
      *
      * @param lastLoginTime 最后登录时间
      */
-    public void setLastLoginTime(Date lastLoginTime) {
+    public Date setLastLoginTime(Date lastLoginTime) {
         this.lastLoginTime = lastLoginTime;
+        return lastLoginTime;
     }
 
     @Override

@@ -1,5 +1,6 @@
 package com.pinyougou.sellergoods.service.impl;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.alibaba.dubbo.config.annotation.Service;
@@ -154,6 +155,20 @@ public class UserServiceImpl implements UserService {
         //跟据查询条件删除数据
         userMapper.deleteByExample(example);
 	}
-	
-	
+
+    @Override
+    public Integer findUserActiveNum() {
+		int count = 0;
+		Example example = new Example(TbUser.class);
+		Example.Criteria criteria = example.createCriteria();
+		criteria.andIsNotNull("lastLoginTime");
+		List<TbUser> tbUsers = userMapper.selectByExample(example);
+		for (TbUser tbUser : tbUsers) {
+			Date lastLoginTime = tbUser.getLastLoginTime();
+			if ((new Date().getTime() - lastLoginTime.getTime()) / (1000*3600*24)>=3){
+				count++;
+			}
+		}
+		return count;
+	}
 }

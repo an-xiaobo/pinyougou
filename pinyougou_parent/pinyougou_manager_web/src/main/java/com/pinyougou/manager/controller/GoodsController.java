@@ -89,6 +89,7 @@ public class GoodsController {
 	public ResultInfo update(@RequestBody Goods goods){
 		try {
 			goodsService.update(goods);
+
 			return new ResultInfo(true, "修改成功");
 		} catch (Exception e) {
 			e.printStackTrace();

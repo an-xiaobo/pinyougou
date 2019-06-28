@@ -1,6 +1,8 @@
 package com.pinyougou.manager.controller;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,6 +12,10 @@ import com.pinyougou.service.UserService;
 
 import com.pinyougou.entity.PageResult;
 import com.pinyougou.entity.ResultInfo;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 /**
  * 请求处理器
  * @author Steven
@@ -98,5 +104,15 @@ public class UserController {
 			return new ResultInfo(false, "删除失败");
 		}
 	}
-	
+
+	/**
+	 * 查询活跃度用户数量
+	 * @return
+	 */
+	@RequestMapping("/findUserActiveNum")
+	public Integer findUserActiveNum(){
+		return userService.findUserActiveNum();
+	}
+
+
 }

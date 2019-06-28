@@ -16,7 +16,9 @@ window.onload=function () {
 			//将要删除的id列表
 			ids:[],
 			//搜索包装对象
-			searchEntity:{}
+			searchEntity:{},
+			//用户活跃数量
+			userActiveNum:0
 		},
 		methods:{
 			//查询所有
@@ -75,12 +77,21 @@ window.onload=function () {
 						alert(response.data.message);
 					}
 				})
-			}
+			},
+			//查询用户活跃度
+			findUserActiveNum:function () {
+				axios.get("/user/findUserActiveNum.do").then(function (response) {
+
+                    app.userActiveNum=response.data;
+                })
+            }
+
 		},
 		//Vue对象初始化后，调用此逻辑
 		created:function () {
 			//调用用分页查询，初始化时从第1页开始查询
 			this.findPage(1);
+			this.findUserActiveNum();
 		}
 	});
 }

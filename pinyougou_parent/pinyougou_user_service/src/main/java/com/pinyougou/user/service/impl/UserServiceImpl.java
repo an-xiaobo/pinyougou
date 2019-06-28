@@ -2,6 +2,7 @@ package com.pinyougou.user.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.alibaba.fastjson.JSON;
+import com.github.abel533.entity.Example;
 import com.pinyougou.mapper.TbUserMapper;
 import com.pinyougou.pojo.TbUser;
 import com.pinyougou.user.service.UserService;
@@ -15,6 +16,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
@@ -82,4 +84,6 @@ public class UserServiceImpl implements UserService {
         //对比用户输入的验证码是否一样
         return code.equals(smsCode);
     }
+
+
 }

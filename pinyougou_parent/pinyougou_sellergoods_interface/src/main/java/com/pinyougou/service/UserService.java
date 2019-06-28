@@ -50,5 +50,10 @@ public interface UserService {
 	 */
 	public void delete(Long [] ids);
 
-	
+
+	/**
+	 * 查询活跃度用户数
+	 * @return
+	 */
+    Integer findUserActiveNum();
 }

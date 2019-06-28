@@ -32,6 +32,7 @@ public class SeckillGoodsTask {
     //30秒执行一次
     @Scheduled(cron = "0/30 * * * * ?")
     public void refreshSeckillGoodsTask(){
+
         //构建条件
         Example example = new Example(TbSeckillGoods.class);
         Example.Criteria criteria = example.createCriteria();

@@ -140,6 +140,11 @@ window.onload=function () {
                         }
                     }
                 })
+            },
+            findUserActiveNum:function () {
+                axios.get().then(function (response) {
+
+                })
             }
 
         },

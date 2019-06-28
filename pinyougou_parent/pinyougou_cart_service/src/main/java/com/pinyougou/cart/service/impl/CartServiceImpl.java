@@ -1,16 +1,20 @@
 package com.pinyougou.cart.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.github.abel533.entity.Example;
 import com.pinyougou.cart.service.CartService;
 import com.pinyougou.entity.Cart;
 import com.pinyougou.mapper.TbItemMapper;
+import com.pinyougou.mapper.TbUserMapper;
 import com.pinyougou.pojo.TbItem;
 import com.pinyougou.pojo.TbOrderItem;
+import com.pinyougou.pojo.TbUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -182,5 +186,29 @@ public class CartServiceImpl implements CartService {
             }
         }
         return null;
+    }
+
+    @Autowired
+    private TbUserMapper userMapper;
+    /**
+     * 修改用户最后登录时间
+     * @param username
+     * @return
+     */
+    @Override
+    public void updateUserEndLoginTime(String username) {
+        Example example = new Example(TbUser.class);
+        Example.Criteria criteria = example.createCriteria();
+        criteria.andEqualTo("username", username);
+        List<TbUser> tbUsers = userMapper.selectByExample(example);
+        for (TbUser tbUser : tbUsers) {
+            Date lastLoginTime = tbUser.getLastLoginTime();
+            if (lastLoginTime==null){
+                lastLoginTime = tbUser.setLastLoginTime(new Date());
+                userMapper.updateByPrimaryKey(tbUser);
+            }else {
+                return;
+            }
+        }
     }
 }
