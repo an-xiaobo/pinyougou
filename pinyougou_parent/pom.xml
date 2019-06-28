@@ -40,10 +40,6 @@
         <module>pinyougou_seckill_service</module>
         <module>pinyougou_seckill_web</module>
         <module>pinyougou_task</module>
-
-        <module>pinyougou_sms_service</module>
-
-
     </modules>
 
     <!-- 集中定义依赖版本号 -->

@@ -2,11 +2,8 @@ package com.pinyougou.sellergoods.service.impl;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-<<<<<<< HEAD
-=======
 
 import com.pinyougou.pojo.TbSpecification;
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 import org.springframework.beans.factory.annotation.Autowired;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.github.abel533.entity.Example;
@@ -163,8 +160,6 @@ public class ItemCatServiceImpl implements ItemCatService {
 		return itemCats;
 	}
 
-<<<<<<< HEAD
-=======
 	/**
 	 * 查询当前登录商家的规格列表
 	 * @return
@@ -186,6 +181,5 @@ public class ItemCatServiceImpl implements ItemCatService {
 		itemCatMapper.updateByPrimaryKeySelective(itemCat);
 
 	}
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 
 }

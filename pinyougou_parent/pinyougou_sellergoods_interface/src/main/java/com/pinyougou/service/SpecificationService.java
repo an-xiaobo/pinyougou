@@ -1,10 +1,7 @@
 package com.pinyougou.service;
 import java.util.List;
-<<<<<<< HEAD
-=======
 
 import com.pinyougou.pojo.TbBrand;
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 import com.pinyougou.pojo.TbSpecification;
 
 import com.pinyougou.entity.PageResult;
@@ -55,10 +52,6 @@ public interface SpecificationService {
 	 * 增加
 	 * @param specification
 	 */
-<<<<<<< HEAD
-	public void add(Specification specification);
-
-=======
 	public void add(TbSpecification specification);
 
 
@@ -75,6 +68,5 @@ public interface SpecificationService {
 	 * @param Id
 	 */
 	public void updateStatus(String status, Long Id);
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 
 }

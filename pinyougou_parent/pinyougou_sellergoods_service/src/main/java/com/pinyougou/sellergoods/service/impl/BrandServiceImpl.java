@@ -1,19 +1,12 @@
 package com.pinyougou.sellergoods.service.impl;
 import java.util.Arrays;
 import java.util.List;
-<<<<<<< HEAD
-=======
 
 import com.pinyougou.pojo.TbGoods;
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 import org.springframework.beans.factory.annotation.Autowired;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.github.abel533.entity.Example;
 import com.github.pagehelper.PageInfo;
-<<<<<<< HEAD
-import com.github.pagehelper.Page;
-=======
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 import com.github.pagehelper.PageHelper;
 import com.pinyougou.mapper.TbBrandMapper;
 import com.pinyougou.pojo.TbBrand;
@@ -81,10 +74,7 @@ public class BrandServiceImpl implements BrandService {
 	 */
 	@Override
 	public void add(TbBrand brand) {
-<<<<<<< HEAD
-=======
 
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 		brandMapper.insertSelective(brand);		
 	}
 
@@ -122,10 +112,6 @@ public class BrandServiceImpl implements BrandService {
         //跟据查询条件删除数据
         brandMapper.deleteByExample(example);
 	}
-<<<<<<< HEAD
-	
-	
-=======
 
 	/**
 	 * 查询当前登录商家的品牌列表
@@ -150,5 +136,4 @@ public class BrandServiceImpl implements BrandService {
 	}
 
 
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 }

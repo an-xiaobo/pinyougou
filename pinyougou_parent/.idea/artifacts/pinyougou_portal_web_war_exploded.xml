@@ -61,6 +61,9 @@
             <element id="module-output" name="pinyougou_pojo" />
           </element>
           <element id="library" level="project" name="Maven: javax.persistence:persistence-api:1.0" />
+          <element id="archive" name="pinyougou_sellergoods_interface-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="pinyougou_sellergoods_interface" />
+          </element>
         </element>
       </element>
       <element id="directory" name="META-INF">

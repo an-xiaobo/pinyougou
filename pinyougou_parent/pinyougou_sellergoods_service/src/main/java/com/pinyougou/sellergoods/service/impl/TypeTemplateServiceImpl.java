@@ -5,10 +5,7 @@ import java.util.Map;
 
 import com.alibaba.fastjson.JSON;
 import com.pinyougou.mapper.TbSpecificationOptionMapper;
-<<<<<<< HEAD
-=======
 import com.pinyougou.pojo.TbSpecification;
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 import com.pinyougou.pojo.TbSpecificationOption;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.alibaba.dubbo.config.annotation.Service;
@@ -181,8 +178,6 @@ public class TypeTemplateServiceImpl implements TypeTemplateService {
 		}
 	}
 
-<<<<<<< HEAD
-=======
 	/**
 	 * 查询当前登录商家的模板列表
 	 * @return
@@ -205,5 +200,4 @@ public class TypeTemplateServiceImpl implements TypeTemplateService {
 
 	}
 
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 }

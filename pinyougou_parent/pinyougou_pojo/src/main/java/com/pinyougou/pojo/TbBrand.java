@@ -20,8 +20,6 @@ public class TbBrand implements Serializable {
     @Column(name = "first_char")
     private String firstChar;
 
-<<<<<<< HEAD
-=======
     /**
      * 商家Id
      */
@@ -52,7 +50,6 @@ public class TbBrand implements Serializable {
 
 
 
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
     private static final long serialVersionUID = 1L;
 
     /**

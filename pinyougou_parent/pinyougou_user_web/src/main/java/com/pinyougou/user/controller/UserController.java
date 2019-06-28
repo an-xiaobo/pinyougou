@@ -3,10 +3,6 @@ package com.pinyougou.user.controller;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.pinyougou.common.utils.PhoneFormatCheckUtils;
 import com.pinyougou.entity.ResultInfo;
-<<<<<<< HEAD
-import com.pinyougou.pojo.TbUser;
-import com.pinyougou.user.service.UserService;
-=======
 import com.pinyougou.pojo.TbAddress;
 import com.pinyougou.pojo.TbItem;
 import com.pinyougou.pojo.TbUser;
@@ -15,26 +11,17 @@ import com.pinyougou.user.service.AddressService;
 import com.pinyougou.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-<<<<<<< HEAD
-=======
 import java.util.List;
 import java.util.Map;
 
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 @RestController
 @RequestMapping("/user")
 public class UserController {
 
-<<<<<<< HEAD
-    @Reference
-    private UserService userService;
-
-=======
 
     @Reference
     private UserService userService;
@@ -42,7 +29,6 @@ public class UserController {
     @Reference
     private AddressService addressService;
 
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
     @RequestMapping("/add")
     public ResultInfo add(@RequestBody TbUser user,String code){
         try {
@@ -71,8 +57,6 @@ public class UserController {
             return new ResultInfo(false, "验证码发送失败!");
         }
     }
-<<<<<<< HEAD
-=======
 
     /**
      * 根据登录用户id查询订单和对应商品
@@ -233,5 +217,4 @@ public class UserController {
     }
 
 
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 }

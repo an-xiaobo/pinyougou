@@ -29,8 +29,6 @@ public class TbItemCat implements Serializable {
     @Column(name = "type_id")
     private Long typeId;
 
-<<<<<<< HEAD
-=======
     /**
      * 商家Id
      */
@@ -58,7 +56,6 @@ public class TbItemCat implements Serializable {
         this.status = status;
     }
 
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
     private static final long serialVersionUID = 1L;
 
     /**

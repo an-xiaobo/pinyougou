@@ -2,9 +2,6 @@ window.onload=function () {
     var app = new Vue({
         el:"#app",
         data:{
-<<<<<<< HEAD
-            loginName:""
-=======
             loginName:"",
             //订单列表
             userOrderList:[],
@@ -20,7 +17,6 @@ window.onload=function () {
             city:[],
             //区
             town:[],
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
         },
         methods:{
             /**
@@ -30,8 +26,6 @@ window.onload=function () {
                 axios.get("/login/name.do").then(function (response) {
                     app.loginName = response.data.username;
                 })
-<<<<<<< HEAD
-=======
             },
             //查询用户订单
             findOrderByUserId:function(){
@@ -156,22 +150,18 @@ window.onload=function () {
             },
             "addressInfo.cityId":function (newValue, oldValue) {
                 this.findareaList(newValue)
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
             }
 
         },
         created:function () {
             //初始化调用 用户名
             this.loginNameInfo();
-<<<<<<< HEAD
-=======
             //初始化调用查询用户订单
             this.findOrderByUserId();
             //初始化调用查询个人信息
             this.getUserInfoByUserId()
             //初始化查询省
             this.findproviceList()
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
         }
     })
 };

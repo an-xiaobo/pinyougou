@@ -3,11 +3,8 @@ import java.util.List;
 import com.pinyougou.pojo.TbItemCat;
 
 import com.pinyougou.entity.PageResult;
-<<<<<<< HEAD
-=======
 import com.pinyougou.pojo.TbSpecification;
 
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 /**
  * 业务逻辑接口
  * @author Steven
@@ -61,8 +58,6 @@ public interface ItemCatService {
 	 * @return
 	 */
 	public List<TbItemCat> findByParentId(Long parentId);
-<<<<<<< HEAD
-=======
 
 	/**
 	 * 查询当前登录商家的规格列表
@@ -77,5 +72,4 @@ public interface ItemCatService {
 	 * @param Id
 	 */
 	public void updateStatus(String status, Long Id);
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 }

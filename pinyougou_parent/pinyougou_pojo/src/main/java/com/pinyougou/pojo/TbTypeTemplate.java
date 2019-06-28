@@ -32,8 +32,6 @@ public class TbTypeTemplate implements Serializable {
     @Column(name = "custom_attribute_items")
     private String customAttributeItems;
 
-<<<<<<< HEAD
-=======
     /**
      * 商家Id
      */
@@ -61,7 +59,6 @@ public class TbTypeTemplate implements Serializable {
         this.status = status;
     }
 
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
     private static final long serialVersionUID = 1L;
 
     /**

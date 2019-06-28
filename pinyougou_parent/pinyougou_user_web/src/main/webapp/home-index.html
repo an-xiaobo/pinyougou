@@ -188,23 +188,6 @@
                             </table>
                         </div>
                         <div class="order-detail">
-<<<<<<< HEAD
-                            <div class="orders">
-                                <div class="choose-order">
-                                    <div class="sui-pagination pagination-large top-pages">
-                                        <ul>
-                                            <li class="prev disabled"><a href="#">上一页</a></li>
-
-                                            <li class="next"><a href="#">下一页</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <!--order1-->
-                                <div class="choose-title">
-                                    <label data-toggle="checkbox" class="checkbox-pretty ">
-                                        <input type="checkbox" checked="checked"><span>2017-02-11 11:59　订单编号：7867473872181848  店铺：哇哈哈 <a>和我联系</a></span>
-=======
                             <!--<div class="orders">-->
                                 <!--<div class="choose-order">-->
                                     <!--<div class="sui-pagination pagination-large top-pages">-->
@@ -221,42 +204,20 @@
                                 <div class="choose-title">
                                     <label data-toggle="checkbox" class="checkbox-pretty ">
                                         <input type="checkbox" checked="checked"><span>{{userOrder.order.createTime}}　订单编号：{{userOrder.order.orderId}}  店铺：{{userOrder.order.sellerId}} <a>和我联系</a></span>
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
                                     </label>
                                     <a class="sui-btn btn-info share-btn">分享</a>
                                 </div>
                                 <table class="sui-table table-bordered order-datatable">
                                     <tbody>
-<<<<<<< HEAD
-                                    <tr>
-                                        <td width="35%">
-                                            <div class="typographic"><img src="img/goods.png"/>
-                                                <a href="#" class="block-text">包邮 正品玛姬儿压缩面膜无纺布纸膜100粒 送泡瓶面膜刷喷瓶 新款</a>
-                                                <span class="guige">规格：温泉喷雾150ml</span>
-=======
                                     <tr v-for="orderItem in userOrder.orderItems">
                                         <td width="35%">
                                             <div class="typographic"><img style="width: 40%" height="40%" :src="orderItem.picPath"/>
                                                 <a href="#" class="block-text">{{orderItem.title}}</a>
                                                 <!--<span class="guige">规格：温泉喷雾150ml</span>-->
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
                                             </div>
                                         </td>
                                         <td width="5%" class="center">
                                             <ul class="unstyled">
-<<<<<<< HEAD
-                                                <li class="o-price">¥599.00</li>
-                                                <li>¥299.00</li>
-                                            </ul>
-                                        </td>
-                                        <td width="5%" class="center">1</td>
-                                        <td width="8%" class="center">
-
-                                        </td>
-                                        <td width="10%" class="center">
-                                            <ul class="unstyled">
-                                                <li>¥299.00</li>
-=======
                                                 <!--<li class="o-price">¥599.00</li>-->
                                                 <li>¥{{orderItem.price}}</li>
                                             </ul>
@@ -286,15 +247,10 @@
                                         <td width="10%" class="center">
                                             <ul class="unstyled">
                                                 <li>¥{{orderItem.totalFee}}</li>
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
                                                 <li>（含运费：￥0.00）</li>
                                             </ul>
                                         </td>
                                         <td width="10%" class="center">
-<<<<<<< HEAD
-                                            <ul class="unstyled">
-                                                <li>等待卖家付款</li>
-=======
                                             <ul class="unstyled" v-if="userOrder.order.status==1">
                                                 <li>等待买家付款</li>
                                                 <li><a href="orderDetail.html" class="btn">订单详情 </a></li>
@@ -313,17 +269,10 @@
                                             </ul>
                                             <ul class="unstyled" v-if="userOrder.order.status==7">
                                                 <li>交易成功</li>
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
                                                 <li><a href="orderDetail.html" class="btn">订单详情 </a></li>
                                             </ul>
                                         </td>
                                         <td width="10%" class="center">
-<<<<<<< HEAD
-                                            <ul class="unstyled">
-                                                <li><a href="#" class="sui-btn btn-info">立即付款</a></li>
-                                                <li>取消订单</li>
-
-=======
                                             <ul class="unstyled" v-if="(userOrder.order.status==2) || (userOrder.order.status==3) ||(userOrder.order.status==4)">
                                                <!-- <li>还剩4天23时</li>-->
                                                 <li><a href="#" class="sui-btn btn-info">确认收货</a></li>
@@ -333,7 +282,6 @@
                                             </ul>
                                             <ul class="unstyled" v-if="userOrder.order.status==7">
                                                 <li><a href="#" class="sui-btn btn-info">评价</a></li>
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
                                             </ul>
                                         </td>
                                     </tr>
@@ -341,14 +289,9 @@
 
                                     </tbody>
                                 </table>
-<<<<<<< HEAD
-                                <!--order2-->
-                                <div class="choose-title">
-=======
                             </div>
                                 <!--order2-->
                                <!-- <div class="choose-title">
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
                                     <label data-toggle="checkbox" class="checkbox-pretty ">
                                         <input type="checkbox" checked="checked"><span>2017-02-11 11:59　订单编号：7867473872181848  店铺：哇哈哈 <a>和我联系</a></span>
                                     </label>
@@ -422,11 +365,7 @@
                                     </tbody>
                                 </table>
 
-<<<<<<< HEAD
-                                <!--order3-->
-=======
                                 &lt;!&ndash;order3&ndash;&gt;
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
                                 <div class="choose-title">
                                     <label data-toggle="checkbox" class="checkbox-pretty ">
                                         <input type="checkbox" checked="checked"><span>2017-02-11 11:59　订单编号：7867473872181848  店铺：哇哈哈 <a>和我联系</a></span>
@@ -476,17 +415,10 @@
 
 
                                     </tbody>
-<<<<<<< HEAD
-                                </table>
-
-
-                            </div>
-=======
                                 </table>-->
 
 
 
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
                             <div class="choose-order">
                                 <div class="sui-pagination pagination-large top-pages">
                                     <ul>

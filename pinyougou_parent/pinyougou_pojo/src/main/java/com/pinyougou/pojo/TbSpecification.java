@@ -18,8 +18,6 @@ public class TbSpecification implements Serializable {
     @Column(name = "spec_name")
     private String specName;
 
-<<<<<<< HEAD
-=======
 
     /**
      * 商家Id
@@ -48,7 +46,6 @@ public class TbSpecification implements Serializable {
         this.status = status;
     }
 
->>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
     private static final long serialVersionUID = 1L;
 
     /**
