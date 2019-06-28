@@ -50,6 +50,9 @@ public interface BrandService {
 	 */
 	public void delete(Long [] ids);
 
+<<<<<<< HEAD
+	
+=======
 
 	/**
 	 * 查询当前登录商家的品牌列表
@@ -64,4 +67,5 @@ public interface BrandService {
 	 * @param Id
 	 */
 	public void updateStatus(String status, Long Id);
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 }

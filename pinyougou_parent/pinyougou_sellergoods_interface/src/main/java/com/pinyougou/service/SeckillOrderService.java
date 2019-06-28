@@ -4,6 +4,10 @@ import com.pinyougou.pojo.TbSeckillOrder;
 
 import com.pinyougou.entity.PageResult;
 /**
+<<<<<<< HEAD
+ * 秒杀订单
+=======
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
  * 业务逻辑接口
  * @author Steven
  *

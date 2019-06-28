@@ -25,7 +25,10 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+<<<<<<< HEAD
+=======
         <option value="$PROJECT_DIR$/pinyougou_sms_service/pom.xml" />
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
       </list>
     </option>
   </component>

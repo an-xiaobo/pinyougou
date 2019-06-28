@@ -19,11 +19,19 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+<<<<<<< HEAD
+        <dependency>
+            <groupId>org.apache.rocketmq</groupId>
+            <artifactId>rocketmq-client</artifactId>
+            <version>4.3.2</version>
+        </dependency>
+=======
         <!--<dependency>-->
             <!--<groupId>org.apache.rocketmq</groupId>-->
             <!--<artifactId>rocketmq-client</artifactId>-->
             <!--<version>4.3.2</version>-->
         <!--</dependency>-->
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
         <dependency>
             <groupId>com.aliyun</groupId>
             <artifactId>aliyun-java-sdk-dysmsapi</artifactId>

@@ -13,6 +13,10 @@ import com.pinyougou.service.SeckillGoodsService;
 import com.pinyougou.entity.PageResult;
 
 /**
+<<<<<<< HEAD
+ * 秒杀商品
+=======
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
  * 业务逻辑实现
  * @author Steven
  *

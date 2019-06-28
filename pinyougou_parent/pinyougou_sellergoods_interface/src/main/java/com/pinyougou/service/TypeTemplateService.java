@@ -2,7 +2,10 @@ package com.pinyougou.service;
 import java.util.List;
 import java.util.Map;
 
+<<<<<<< HEAD
+=======
 import com.pinyougou.pojo.TbSpecification;
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 import com.pinyougou.pojo.TbTypeTemplate;
 
 import com.pinyougou.entity.PageResult;
@@ -59,6 +62,9 @@ public interface TypeTemplateService {
 	 * @return
 	 */
 	public List<Map> findSpecList(Long templateId);
+<<<<<<< HEAD
+	
+=======
 
 	/**
 	 * 查询当前登录商家的规格列表
@@ -73,4 +79,5 @@ public interface TypeTemplateService {
 	 * @param Id
 	 */
 	public void updateStatus(String status, Long Id);
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 }

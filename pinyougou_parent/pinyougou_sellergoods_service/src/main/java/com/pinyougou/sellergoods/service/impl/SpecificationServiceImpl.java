@@ -3,7 +3,10 @@ import java.util.Arrays;
 import java.util.List;
 
 import com.pinyougou.mapper.TbSpecificationOptionMapper;
+<<<<<<< HEAD
+=======
 import com.pinyougou.pojo.TbBrand;
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 import com.pinyougou.pojo.TbSpecificationOption;
 import com.pinyougou.pojogroup.Specification;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -146,6 +149,19 @@ public class SpecificationServiceImpl implements SpecificationService {
 	 * @param specification
 	 */
     @Override
+<<<<<<< HEAD
+    public void add(Specification specification) {
+    	//保存规格
+        specificationMapper.insertSelective(specification.getSpecification());
+
+        //保存规格选项
+		for (TbSpecificationOption option : specification.getSpecificationOptionList()) {
+			//设置保存规格ID
+			option.setSpecId(specification.getSpecification().getId());
+			specificationOptionMapper.insertSelective(option);
+		}
+    }
+=======
     public void add(TbSpecification specification) {
     	//保存规格
         specificationMapper.insertSelective(specification);
@@ -172,6 +188,7 @@ public class SpecificationServiceImpl implements SpecificationService {
 		specificationMapper.updateByPrimaryKeySelective(specification);
 
 	}
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 
 
 }

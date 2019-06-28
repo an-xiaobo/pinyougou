@@ -175,7 +175,11 @@ public class SeckillGoodsServiceImpl implements SeckillGoodsService {
 		//取出商品信息
 		TbSeckillGoods seckillGoods = (TbSeckillGoods) redisTemplate.boundHashOps("seckillGoods").get(goodsId);
 		//计算时间差-秒
+<<<<<<< HEAD
+		long allsecond = (seckillGoods.getEndTime().getTime()- System.currentTimeMillis())/1000;
+=======
 		long allsecond = (seckillGoods.getEndTime().getTime()- new Date().getTime())/1000;
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 		map.put("allsecond", allsecond);
 		//返回
 		return map;

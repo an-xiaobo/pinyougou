@@ -2,6 +2,12 @@ var app = new Vue({
     el: "#app",
     data: {
         //广告列表
+<<<<<<< HEAD
+        contentList: [],
+        keyword:''
+    },
+    methods: {
+=======
         seen: false,
         contentList: [],
         keyword:'',
@@ -25,6 +31,7 @@ var app = new Vue({
                 console.log(err);
             });
         },
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
         //查询广告列表
         findContentList: function () {
             //查询广告轮播图
@@ -37,6 +44,8 @@ var app = new Vue({
          */
         search:function () {
             window.location.href = "http://localhost:8083/search.html?keyword="+this.keyword;
+<<<<<<< HEAD
+=======
         },
         onMouseOver:function () {
             //alert("移入");
@@ -45,12 +54,16 @@ var app = new Vue({
         onMouseOut:function () {
             //alert("移除");
             this.seen = false;
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
         }
     },
     //初始化调用
     created: function () {
         //查询广告列表
         this.findContentList();
+<<<<<<< HEAD
+=======
         this.findByParentId(0);
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
     }
 });

@@ -4,9 +4,13 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.pinyougou.entity.PageResult;
 import com.pinyougou.entity.ResultInfo;
 import com.pinyougou.pojo.TbItemCat;
+<<<<<<< HEAD
+import com.pinyougou.service.ItemCatService;
+=======
 import com.pinyougou.pojo.TbSpecification;
 import com.pinyougou.service.ItemCatService;
 import org.springframework.security.core.context.SecurityContextHolder;
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -52,11 +56,14 @@ public class ItemCatController {
 	@RequestMapping("/add")
 	public ResultInfo add(@RequestBody TbItemCat itemCat){
 		try {
+<<<<<<< HEAD
+=======
 			//从Security中获取用户名
 			String sellerId = SecurityContextHolder.getContext().getAuthentication().getName();
 			// 追加商家id
 			itemCat.setSellerId(sellerId);
 			itemCat.setStatus("0");
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 			itemCatService.add(itemCat);
 			return new ResultInfo(true, "增加成功");
 		} catch (Exception e) {
@@ -116,6 +123,9 @@ public class ItemCatController {
 	public List<TbItemCat> findByParentId(Long parentId){
 		return itemCatService.findByParentId(parentId);
 	}
+<<<<<<< HEAD
+	
+=======
 
 	/**
 	 * 查询当前登录商家的分类列表
@@ -148,4 +158,5 @@ public class ItemCatController {
 			return new ResultInfo(false, "修改失败");
 		}
 	}
+>>>>>>> 4b9b0fb0864012a9a701190321b801c95518e1e3
 }
