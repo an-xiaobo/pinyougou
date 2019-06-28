@@ -2,38 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5820309-af1f-4059-9e56-363d38b344a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pinyougou_show_web/src/main/java/com/pinyougou/show/controller/SeckillGoodsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pinyougou_show_web/src/main/webapp/admin/seackill_active.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pinyougou_show_web/src/main/webapp/admin/seckill_edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pinyougou_show_web/src/main/webapp/controller/seackillController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou_dao/src/main/resources/properties/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/pinyougou_dao/src/main/resources/properties/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou_order_service/src/main/java/com/pinyougou/order/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pinyougou_order_service/src/main/java/com/pinyougou/order/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou_portal_web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pinyougou_portal_web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou_portal_web/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pinyougou_portal_web/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou_seckill_service/src/main/java/com/pinyougou/seckill/service/impl/SeckillGoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pinyougou_seckill_service/src/main/java/com/pinyougou/seckill/service/impl/SeckillGoodsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou_seckill_service/src/main/java/com/pinyougou/seckill/service/impl/SeckillOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pinyougou_seckill_service/src/main/java/com/pinyougou/seckill/service/impl/SeckillOrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou_sellergoods_interface/src/main/java/com/pinyougou/service/SeckillOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pinyougou_sellergoods_interface/src/main/java/com/pinyougou/service/SeckillOrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou_sellergoods_service/src/main/java/com/pinyougou/sellergoods/service/impl/SeckillGoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pinyougou_sellergoods_service/src/main/java/com/pinyougou/sellergoods/service/impl/SeckillGoodsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou_show_web/src/main/java/com/pinyougou/show/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pinyougou_show_web/src/main/java/com/pinyougou/show/controller/GoodsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou_show_web/src/main/webapp/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pinyougou_show_web/src/main/webapp/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou_sms_service/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou_sms_service/target/classes/com/itcast/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou_sms_service/target/classes/com/itcast/config/ConsumerConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou_sms_service/target/classes/com/itcast/listener/MessageListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou_sms_service/target/classes/com/itcast/utils/SmsUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou_sms_service/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou_sms_service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou_sms_service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou_sms_service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou_sms_service/target/pinyougou_sms_service-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou_task/src/main/java/com/pinyougou/SeckillGoodsTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/pinyougou_task/src/main/java/com/pinyougou/SeckillGoodsTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiaobo_test/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiaobo_test/src/main/java/test.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/pinyougou_sellergoods_interface/target/" />
     <ignored path="$PROJECT_DIR$/pinyougou_seckill_web/target/" />
@@ -516,7 +485,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561728492280" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561730102933" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -714,8 +683,16 @@
       <workItem from="1561470170490" duration="3170000" />
       <workItem from="1561510130358" duration="27305000" />
       <workItem from="1561622365920" duration="593000" />
-      <workItem from="1561683973574" duration="9695000" />
+      <workItem from="1561683973574" duration="10285000" />
     </task>
+    <task id="LOCAL-00001" summary="秒杀商品 申请 前端 静态 编辑实现">
+      <created>1561728495501</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561728495502</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -730,10 +707,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40763000" />
+    <option name="totallyTimeSpent" value="41353000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49836066" visible="true" weight="0.26096824" />
