@@ -146,10 +146,16 @@ public class SpecificationServiceImpl implements SpecificationService {
 	 * @param specification
 	 */
     @Override
-    public void add(TbSpecification specification) {
-    	//保存规格
-        specificationMapper.insertSelective(specification);
-
+    public void add(Specification specification) {
+		//保存规格名称信息
+		specificationMapper.insertSelective(specification.getSpecification());
+		//保存规格选项列表
+		for (TbSpecificationOption option : specification.getSpecificationOptionList()) {
+			//设置主表id
+			option.setSpecId(specification.getSpecification().getId());
+			//保存选项信息
+			specificationOptionMapper.insertSelective(option);
+		}
     }
 	/**
 	 * 查询当前登录商家的规格列表
