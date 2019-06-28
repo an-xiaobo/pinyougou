@@ -50,5 +50,18 @@ public interface BrandService {
 	 */
 	public void delete(Long [] ids);
 
-	
+
+	/**
+	 * 查询当前登录商家的品牌列表
+	 * @return
+	 */
+	public List<TbBrand> getBySellerId(String sellerId);
+
+
+	/**
+	 * 更新状态
+	 * @param status
+	 * @param Id
+	 */
+	public void updateStatus(String status, Long Id);
 }

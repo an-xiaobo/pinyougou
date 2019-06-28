@@ -4,7 +4,9 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.pinyougou.entity.PageResult;
 import com.pinyougou.entity.ResultInfo;
 import com.pinyougou.pojo.TbItemCat;
+import com.pinyougou.pojo.TbSpecification;
 import com.pinyougou.service.ItemCatService;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -50,6 +52,11 @@ public class ItemCatController {
 	@RequestMapping("/add")
 	public ResultInfo add(@RequestBody TbItemCat itemCat){
 		try {
+			//从Security中获取用户名
+			String sellerId = SecurityContextHolder.getContext().getAuthentication().getName();
+			// 追加商家id
+			itemCat.setSellerId(sellerId);
+			itemCat.setStatus("0");
 			itemCatService.add(itemCat);
 			return new ResultInfo(true, "增加成功");
 		} catch (Exception e) {
@@ -109,5 +116,36 @@ public class ItemCatController {
 	public List<TbItemCat> findByParentId(Long parentId){
 		return itemCatService.findByParentId(parentId);
 	}
-	
+
+	/**
+	 * 查询当前登录商家的分类列表
+	 * @return
+	 */
+	@RequestMapping("/findItemCat")
+	public List<TbItemCat> findBrand(){
+
+		//从Security中获取用户名
+		String sellerId = SecurityContextHolder.getContext().getAuthentication().getName();
+
+		// 根据商家查询分类列表
+		return itemCatService.getBySellerId(sellerId);
+
+	}
+
+	/**
+	 * 更新状态
+	 * @param status
+	 * @return
+	 */
+	@RequestMapping("/updateStatus")
+	public ResultInfo updateStatus(String status,Long id){
+		try {
+			// 更新状态
+			itemCatService.updateStatus(status,id);
+			return new ResultInfo(true, "修改成功");
+		} catch (Exception e) {
+			e.printStackTrace();
+			return new ResultInfo(false, "修改失败");
+		}
+	}
 }

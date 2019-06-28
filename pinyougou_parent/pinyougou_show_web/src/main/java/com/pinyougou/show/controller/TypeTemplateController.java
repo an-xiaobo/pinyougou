@@ -3,8 +3,10 @@ package com.pinyougou.show.controller;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.pinyougou.entity.PageResult;
 import com.pinyougou.entity.ResultInfo;
+import com.pinyougou.pojo.TbSpecification;
 import com.pinyougou.pojo.TbTypeTemplate;
 import com.pinyougou.service.TypeTemplateService;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -51,6 +53,11 @@ public class TypeTemplateController {
 	@RequestMapping("/add")
 	public ResultInfo add(@RequestBody TbTypeTemplate typeTemplate){
 		try {
+			//从Security中获取用户名
+			String sellerId = SecurityContextHolder.getContext().getAuthentication().getName();
+			// 追加商家id
+			typeTemplate.setSellerId(sellerId);
+			typeTemplate.setStatus("0");
 			typeTemplateService.add(typeTemplate);
 			return new ResultInfo(true, "增加成功");
 		} catch (Exception e) {
@@ -110,5 +117,36 @@ public class TypeTemplateController {
 	public List<Map> findSpecList(Long templateId){
 		return typeTemplateService.findSpecList(templateId);
 	}
-	
+
+	/**
+	 * 查询当前登录商家的模板列表
+	 * @return
+	 */
+	@RequestMapping("/findTemplate")
+	public List<TbTypeTemplate> findTemplate(){
+
+		//从Security中获取用户名
+		String sellerId = SecurityContextHolder.getContext().getAuthentication().getName();
+
+		// 根据商家查询模板列表
+		return typeTemplateService.getBySellerId(sellerId);
+
+	}
+
+	/**
+	 * 更新状态
+	 * @param status
+	 * @return
+	 */
+	@RequestMapping("/updateStatus")
+	public ResultInfo updateStatus(String status,Long id){
+		try {
+			// 更新状态
+			typeTemplateService.updateStatus(status,id);
+			return new ResultInfo(true, "修改成功");
+		} catch (Exception e) {
+			e.printStackTrace();
+			return new ResultInfo(false, "修改失败");
+		}
+	}
 }
